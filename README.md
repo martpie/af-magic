@@ -9,7 +9,7 @@ Oh My Zsh's `af-magic` prompt, but for Oh My Fish 🐟
 ```bash
 omf cd
 cd themes
-git clone https://github.com/martpie/omf-af-magic.git ./af-magic
+git clone https://github.com/martpie/af-magic.git ./af-magic
 omf theme af-magic
 ```
 

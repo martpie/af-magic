@@ -26,8 +26,6 @@ function fish_prompt
   set -l yellow (set_color yellow)
   set -l normal (set_color normal)
 
-  set fish_prompt_pwd_dir_length 0
-
   set -l separator $black"------------------------------------------------------------"
   set -l arrow "»"
   # set -l cwd $blue(basename (prompt_pwd))

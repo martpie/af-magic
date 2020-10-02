@@ -22,11 +22,11 @@ function fish_prompt
   set -l blue (set_color blue)
   set -l cyan (set_color cyan)
   set -l green (set_color green)
-  set -l black (set_color black)
+  set -l brblack (set_color brblack)
   set -l yellow (set_color yellow)
   set -l normal (set_color normal)
 
-  set -l separator $black"------------------------------------------------------------"
+  set -l separator $brblack"------------------------------------------------------------"
   set -l arrow "»"
   # set -l cwd $blue(basename (prompt_pwd))
   set -l cwd $blue(prompt_pwd_full)

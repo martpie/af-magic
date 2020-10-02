@@ -2,6 +2,8 @@
 
 `oh-my-zsh`'s `af-magic`, but for `oh-my-fish`.
 
+![screenshot of af-magic for oh-my-fish](./screenshot.png)
+
 ## Install
 
 ```

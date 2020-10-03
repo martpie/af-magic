@@ -19,27 +19,26 @@ function prompt_pwd_full
 end
 
 function fish_prompt
-  set -l blue (set_color blue)
   set -l cyan (set_color cyan)
-  set -l green (set_color green)
+  set -l brcyan (set_color brcyan)
+  set -l brgreen (set_color brgreen)
   set -l brblack (set_color brblack)
-  set -l yellow (set_color yellow)
+  set -l bryellow (set_color bryellow)
   set -l normal (set_color normal)
 
   set -l separator $brblack"------------------------------------------------------------"
   set -l arrow "»"
-  # set -l cwd $blue(basename (prompt_pwd))
-  set -l cwd $blue(prompt_pwd_full)
+  set -l cwd $cyan(prompt_pwd_full)
 
   if [ (_git_branch_name) ]
-    set -l parenthesis_start $cyan"("
-    set -l parenthesis_end $cyan")"
+    set -l parenthesis_start $brcyan"("
+    set -l parenthesis_end $brcyan")"
 
-    set git_info $green(_git_branch_name)
+    set git_info $brgreen(_git_branch_name)
     set git_info "$parenthesis_start$git_info"
 
     if [ (_is_git_dirty) ]
-      set -l dirty $yellow"*"
+      set -l dirty $bryellow"*"
       set git_info "$git_info$dirty"
     end
 
